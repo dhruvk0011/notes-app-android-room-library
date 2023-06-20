@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/blackShade1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="43sp"
+            android:text="Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd= "true"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/blackShade2"
+            app:cardCornerRadius="22dp">
+
+            <ImageView
+            android:layout_gravity="center"
+                app:tint="@color/white"
+                android:contentDescription="search icon"
+                android:src="@drawable/search_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notesViewer"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/blackShade2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="28dp"
+        android:layout_margin="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/addNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_image"
+            android:layout_gravity="center"
+            app:tint="@color/white"
+            >
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

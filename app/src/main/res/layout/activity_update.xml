@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNotesActivity"
+    android:background="@color/blackShade1"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/backBtn"
+            android:layout_centerVertical="true"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/blackShade2"
+            app:cardCornerRadius="24dp">
+
+            <ImageView
+                android:contentDescription="back image"
+                android:layout_gravity="center"
+                app:tint="@color/white"
+                android:src="@drawable/arrow_back_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/updateNote"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/blackShade2"
+            app:cardCornerRadius="18dp">
+
+            <TextView
+                android:text="Update"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                app:tint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/titleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textColorHint="@color/fontColor"
+            android:textColor="@color/white"
+            android:hint="Title"
+            android:background="@null"
+            />
+
+        <EditText
+            android:id="@+id/descNote"
+            android:layout_margin="8dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColorHint="@color/fontColor"
+            android:textColor="@color/white"
+            android:hint="Type something..."
+            android:background="@null"
+            />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

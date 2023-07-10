@@ -24,22 +24,22 @@
             android:layout_height="wrap_content"
             />
 
-        <androidx.cardview.widget.CardView
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd= "true"
-            android:layout_width="53dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/blackShade2"
-            app:cardCornerRadius="22dp">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentEnd= "true"-->
+<!--            android:layout_width="53dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:backgroundTint="@color/blackShade2"-->
+<!--            app:cardCornerRadius="22dp">-->
 
-            <ImageView
-            android:layout_gravity="center"
-                app:tint="@color/white"
-                android:contentDescription="search icon"
-                android:src="@drawable/search_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </androidx.cardview.widget.CardView>
+<!--            <ImageView-->
+<!--            android:layout_gravity="center"-->
+<!--                app:tint="@color/white"-->
+<!--                android:contentDescription="search icon"-->
+<!--                android:src="@drawable/search_image"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </androidx.cardview.widget.CardView>-->
     </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/notesViewer"
